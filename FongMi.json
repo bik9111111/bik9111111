@@ -1,0 +1,548 @@
+{
+  "spider": "./custom_spider.jar;md5;43989964965deab2a4b6b48251043412",
+  "sites": [
+
+{
+			"key": "豆瓣",
+			"name": "豆瓣",
+			"type": 3,
+			"api": "csp_Douban",
+		    "jar":"./lib/pg.jar",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs":1,
+			"ext": "./lib/douban.json"
+		},
+    	{
+			"key":"Youtube",
+			"name":"Youtube",
+			"type":3,
+			"api": "csp_Youtube",
+			"jar":"./lib/pg.jar",
+			"searchable": 1,
+			"quickSearch": 0,
+			"changeable": 0,
+			"timeout": 120,
+			"ext":{
+				"token":"./lib/tokenm.json",
+				"json":"./lib/youtube.json",
+				"type":"直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
+				"keywords":"排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
+				"codecs":"",
+				"proxy":"proxy",
+				"danmu":true
+			},
+			"style": {
+				"type": "rect",
+				"ratio": 1.77
+			}
+		},
+		{
+			"key": "多多影音",
+			"name": "多多影音",
+			"type": 3,
+			"api": "csp_Wobg",
+			"jar":"./lib/pg.jar",
+			"quickSearch": 1,
+			"changeable": 1,
+			"filterable": 1,
+			"timeout": 60,
+			"ext": "./lib/tokenm.json$$$https://tv.yydsys.top/$$$noproxy$$$1$$$./lib/wogg.json$$$duoduo"
+		},
+		{"key":"云星4K","name":"云星4K|网盘","type":3,"api":"csp_Wobg","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://4k.4u4.cn$$$noproxy$$$1$$$./lib/wogg.json"},
+		{
+      "key": "星芽短剧",
+      "name": "星芽｜短剧",
+      "type": 3,
+      "api": "csp_AppXY",
+      "jar": "./spider.jar",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    {
+      "key": "无忧短剧",
+      "name": "无忧｜短剧",
+      "type": 3,
+      "api": "csp_Duanj",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "jar": "./lib/danmu.jar;md5;1c42ad649c8b8acdfb944509d62bda75"
+    },
+    {
+      "key": "在线短剧",
+      "name": "在线｜短剧",
+      "type": 3,
+      "api": "csp_Duanju",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "jar": "./lib/danmu.jar;md5;1c42ad649c8b8acdfb944509d62bda75"
+    },
+    {
+      "key": "韩小圈",
+      "name": "韩小圈｜APP",
+      "type": 3,
+      "api": "csp_HanXiaoQuan",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "jar": "./lib/danmu.jar;md5;1c42ad649c8b8acdfb944509d62bda75"
+    },
+    {
+      "key": "可可影视",
+      "name": "可可｜影视",
+      "type": 3,
+      "api": "csp_Keke",
+      "jar": "./spider.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+            {
+            "key": "金鹰克隆",
+            "name": "金鹰克隆",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net/jy.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        {
+            "key": "华为吧克隆",
+            "name": "华为吧克隆",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net/hwb.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+            },
+            	{
+            "key": "黑木耳克隆",
+            "name": "黑木耳克隆",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net/225.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+			{"key":"TGYunPan","name":"TGPG","type":3,"api":"csp_TGYunPanLocal","jar":"./lib/pg.jar","timeout":60, "ext":"./lib/tokenm.json$$$https://t.me/$$$hao115,guaguale115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe$$$proxy$$$1"},
+		{"key":"115Share","name":"115云盘分享","type":3,"api":"csp_P115Share","jar":"./lib/pg.jar","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":120, "ext":"./lib/tokenm.json$$$./lib/115share.txt$$$db$$$1",
+			"style": {
+				"type": "list",
+				"ratio": 1.1
+			}
+		},	{"key":"Hdhive","name":"影巢|网盘","type":3,"api":"csp_Hdhive","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.hdhive.online/$$$noproxy$$$1"},
+		{"key":"Ppxzy","name":"皮皮虾|网盘","type":3,"api":"csp_Ppxzy", "jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1"},
+		{"key":"盘友圈","name":"盘友圈|网盘搜索","type":3,"api":"csp_Panyq","jar":"./lib/pg.jar","timeout":60, "ext":"./lib/tokenm.json$$$site$$$proxy"},
+		{"key":"Wogg","name":"玩偶哥哥|网盘","type":3,"api":"csp_Wogg","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wogg.888484.xyz/$$$noproxy$$$1$$$./lib/wogg.json$$$WOGG"},
+		{"key":"Wobg","name":"玩偶表哥|网盘","type":3,"api":"csp_Wobg","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/wogg.json$$$WOBG"},
+		{"key":"蜡笔网盘","name":"蜡笔|网盘","type":3,"api":"csp_Wobg","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json$$$LABI"},
+		{"key":"Mogg","name":"木偶哥哥|网盘","type":3,"api":"csp_Wobg","jar":"./lib/pg.jar","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$http://mogg.top/$$$noproxy$$$1$$$./lib/wogg.json$$$MOGG"},
+		{"key": "土豆","name": "土豆|网盘","type": 3,"api": "csp_Wobg","jar":"./lib/pg.jar","searchable": 1,"filterable": 0,"changeable": 1, "timeout":60, "ext":"./lib/tokenm.json$$$https://tudou.lvdoui.top/$$$proxy$$$1$$$./lib/wogg.json$$$TUDOU"},
+		{
+			"key": "小米网盘",
+			"name": "小米|网盘",
+			"type": 3,
+			"api": "csp_Wobg",
+			"jar":"./lib/pg.jar",
+			"quickSearch": 1,
+			"changeable": 1,
+			"filterable": 1,
+			"timeout": 60,
+			"ext": "./lib/tokenm.json$$$https://mihdr.top/$$$noproxy$$$1$$$./lib/wogg.json$$$XIAOMI"
+		},
+	    {
+      "key": "小纸条",
+      "name": "小纸条",
+      "type": 3,
+      "api": "csp_XiaoZhiTiao",
+       "jar":"./custom_spider.jar",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+        }
+        },
+		{
+			"key": "网盘配置",
+			"name": "网盘及彈幕配置",
+			"type": 3,
+			"api": "csp_Config",
+			"jar":"./lib/pg.jar",
+			"searchable": 0,
+			"changeable": 0,
+			"ext":"./lib/tokenm.json",
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			}
+		},
+    {
+      "key": "玩偶❤️",
+      "name": "玩偶❤️",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json",
+        "siteUrl": "https://www.wogg.bf/",
+        "filter": "./wogg.json"
+      }
+    },
+    {
+      "key": "哔哩FM",
+      "name": "哔哩",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "./bilibili.json",
+        "cookie": ""
+      }
+    },
+    {
+      "key": "玩偶 | 蜡笔",
+      "name": "玩偶 | 蜡笔",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json",
+        "siteUrl": "https://duopan.fun",
+        "filter": "./wogg.json"
+      }
+    },
+    {
+      "key": "ConfigCenter",
+      "name": "配置中心",
+      "type": 3,
+      "api": "csp_ConfigCenter",
+      "searchable": 0,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "星剧社",
+      "name": "星剧社",
+      "type": 3,
+      "api": "csp_Star2",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "易搜",
+      "name": "易搜|4K",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "盤搜索",
+      "name": "盤搜索",
+      "type": 3,
+      "api": "csp_PanSearch",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "賤賤",
+      "name": "賤賤",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/jianpian.json"
+    },
+    {
+      "key": "TgYunPanLocal1",
+      "name": "Tg❤️1",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "channelUsername": "yunpanshare",
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "TgYunPanLocal2",
+      "name": "Tg❤️l2",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "channelUsername": "shareAliyun",
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "TgYunPanLocal3",
+      "name": "Tg❤️3",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "channelUsername": "kuakeyun",
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "TgYunPanLocal4",
+      "name": "Tg❤️4",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "channelUsername": "qixingzhenren",
+        "commonConfig": "./peizhi.json"
+      }
+    },
+    {
+      "key": "TgYunPanLocal5",
+      "name": "Tg❤️5",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "channelUsername": "guaguale115",
+        "commonConfig": "./peizhi.json"
+      }
+    },
+            {
+      "key": "csp_JavDb",
+      "name": "🧲JavDb",
+      "type": 3,
+      "api": "csp_JavDb",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "style": {"type": "rect","ratio": 1.5},
+      "ext": "./lib/tokenm.json$$$https://javdb.com$$$null"
+    },
+        {
+		    "key":"麻豆姐姐",
+		    "name":"麻豆姐姐","type":1,"api":"https://www.md91.cc/api.php/provide/vod/","style":{"ratio":1.7}},
+		    {
+            "key": "MissAV",
+            "name": "Miss┃磁力",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "jar": "./lib/XBPQ.jar",
+            "ext": {
+                "数组": "img x-cloak&&/a></div></div>[不包含:item.title]",
+                "图片": "class=\"lozad*data-src=\"&&\"",
+                "标题": "<a class=\"text-secondary*>&&<",
+                "副标题": "<span class=\"absolute*>&&</span",
+                "简介": "keywords\" content=\"&&\"",
+                "链接": "href=\"&&\"",
+                "搜索url": "https://missav.com/cn/search/{wd}?page={pg}",
+                "分类url": "https://missav.com/{cateId}?page={catePg};;z",
+                "分类": "中文字幕$dm265/cn/chinese-subtitle#最近更新$dm509/cn/new#新作上市$dm504/cn/release#无码流出$dm558/cn/uncensored-leak#VR$cn/genres/VR#今日热门$dm242/cn/today-hot#本週热门$dm167/cn/weekly-hot#本月热门$dm206/cn/monthly-hot#SIRO$dm23/cn/siro#LUXU$dm20/cn/luxu#GANA$dm17/cn/gana#PRESTIGE PREMIUM$dm14/cn/maan#S-CUTE$dm23/cn/scute#ARA$dm19/cn/ara#无码流出$dm558/cn/uncensored-leak#FC2$dm94/cn/fc2#HEYZO$dm621/cn/heyzo#东京热$dm29/cn/tokyohot#一本道$dm39925/cn/1pondo#Caribbeancom$dm75695/cn/caribbeancom#Caribbeancompr$dm1200/cn/caribbeancompr#10musume$dm39286/cn/10musume#pacopacomama$dm663/cn/pacopacomama#Gachinco$dm135/cn/gachinco#XXX-AV$dm25/cn/xxxav#人妻斩$dm24/cn/marriedslash#顽皮 4610$dm19/cn/naughty4610#顽皮 0930$dm22/cn/naughty0930#麻豆传媒$dm31/cn/madou#TWAV$dm17/cn/twav#Furuke$dm14/cn/furuke",
+                "页面代理": "proxy"
+            }
+        },
+
+        {
+        "key": "py_aidouchuanmei",
+        "name": "麻豆传媒(T4_py)",
+        "type": 4,
+        "api": "https://py.doube.eu.org/api?site=aidouchuanmei",
+        "searchable": 1,
+        "quickSearch": 0,
+        "filterable": 0,
+        "style": {"type": "rect","ratio": 1.33}
+        },
+        {
+        "key": "糖心",
+        "name": "糖心传媒",
+        "type": 4,
+        "api": "https://py.doube.eu.org/api?site=liushoushaofu",
+        "searchable": 0,
+        "quickSearch": 0,
+        "filterable": 0,
+        "style": {"type": "rect","ratio": 1.33}
+        },
+		    {
+            "key": "Jable",
+            "name": "┃JableTV┃",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "style": {
+                "type": "rect",
+                "ratio": 1.5
+            },
+            "ext": {
+                "主页url": "https://jable.tv/",
+                "数组": "class=\"col-6 col-sm-4 col-lg-3\">&&class=\"sub-title\">&&</div>",
+                "图片": "data-src=\"&&\"",
+                "标题": "class=\"title\">*>&&</a",
+                "链接": "href=\"&&\"",
+                "分类二次截取": "class=\"app-nav\">&&</nav>",
+                "分类数组": "<a&&</a[不包含:按#優先]",
+                "分类标题": ">&&</a",
+                "分类ID": "href=\"https://jable.tv/&&/\"",
+                "分类url": "https://jable.tv/{cateId}/{catePg}/;;z"
+            }
+        },
+        {
+            "key": "Bi8TV",
+            "name": "Bi8TV",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+                "style": {
+                "type": "rect",
+                "ratio": 1.485
+            },
+            "ext": {
+                 "主页url": "https://v3.bi888.link/",
+                "直接播放": "1",
+                "图片": "img src=\"&&\"",
+                "标题": "alt=\"&&\"",
+                "链接": "href=\"&&\"",
+  
+                "分类url": "https://v3.bi888.link/vodtype/{cateId}-{catePg}.html",
+                "分类": "精品推荐$20#国产精品$21#日韩精品$22#欧美精品$23#中文字幕$24#日韩无码$25#日韩有码$26#网红主播$27#卡通动漫$28#探花系列$29#SM重味$30#自拍偷拍$31#强奸乱伦$32#口交视频$33#自慰系列$34#教师学生$35#3P合辑$36#巨乳系列$37#颜射系列$38#制服诱惑$39#萝莉少女$40#人兽之恋$41#人妻熟女$42#女同性恋$43#稀缺资源$45#三级伦理$44#空姐模特$48#国产盗摄$49#人妖系列$50#虚拟VR$51"
+            }
+        },
+        {
+            "key": "微密猫",
+            "name": "🔞微密猫",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "ext": {
+                "主页url": "https://maobao.vip/",
+                "首页": "无圣光视频$wushebgguang/无圣光视频",
+                "数组": "\"post grid\"&&\"post grid\"",
+                "图片": "src=\"&&\"",
+                "标题": "title=\"&&\"",
+                "副标题": "</i>&&</span>",
+                "链接": "href=\"&&\"",
+                "分类url": "https://maobao.vip/mid/{cateId}/page/{catePg};;z",
+                "分类": "无圣光视频$wushebgguang/无圣光视频#微密视频$weme/wmsp#森甜视频$stxl/stsp#网红视频$whxl/whsp"
+            }
+        },
+        {
+            "key": "✨R星✨",
+            "name": "✨R星✨",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+            "主页url": "http://www.rluba-mod.sbs",
+                "数组": "img-box cover-md\"&&<p class=\"sub-title\">",
+                "标题": ">&&</a></h6>",
+                "图片": "data-src=\"&&\"",
+                "链接": "href=\"&&\"",
+                "分类url": "https://www.rluba-mod.sbs/index.php/vodtype/{cateId}-{catePg}.html;;z",
+                "分类": "卡通动漫$49#无码中文$34#强奸中文$35#巨乳中文$36#乱伦中文$37#制服中文$38#人妻中文$39#调教中文$40#出轨中文$41#中文字幕$59#欧美性爱$29#性爱音乐视频-PMV$93#人兽$30#人妖$31#MomsTeachSex$95#男同$32#女同$33#Fake Taxi$83#Barzzers$87#Wow Girls$117#FamilyStrokes$116#骑兵有码$27#步兵无码$28#制服师生$50#强奸乱伦$51#人妻熟女$53#三级剧情$55#丝袜美腿$56#亚洲情色$58#麻豆视频$161#91制片厂$162#天美传媒$163#蜜桃传媒$164#皇家华人$165#星空传媒$166#精东影业$167#大象传媒$168#91茄子$169#性视界传媒$170#兔子先生$171#杏吧原创$172#香蕉传媒$174#SA国际传媒$175#EDmosaic$176#PsychoPorn$177#糖心Vlog$178#葫芦影业$179#果冻传媒$180#国产精品$10#精品三级$11#主播大秀$12#抖阴视频$13#国模私拍$14#颜射瞬间$15#女神学生$16#美熟少妇$17#娇妻素人$18#空姐模特$19#国产乱伦$20#专题$26#自慰群交$21#野合车震$22#职场同事$23#国产名人$24#网曝门事件$25#偷拍自拍$57#北京天使$119"
+            }
+        },
+
+{
+            "key": "✨柠檬✨",
+            "name": "柠檬姐姐",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+            "主页url": "http://lsshaofu.xyz/",                "数组": "<a&&</a>",
+                "标题": "<p&&</p>",
+                "图片": "<img src=\"&&\"",
+                "链接": "href=\"&&\"",
+                "分类url": "https://www.lsshaofu.xyz/index.php/vod/type/id/{cateId}/page/{catePg}.html;;z",
+                "分类": "国产精品$1#日韩精选$2#国产传媒$3#国产自拍$27#网红网爆$5#成人动漫$21#巨乳美乳$22#熟女人妻$23#主播直播$24#强奸乱伦$25#古怪少女$26#经典三级$4"
+            }
+        },
+      {
+            "key": "少妇姐姐",
+            "name": "少妇姐姐",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./lib/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "./lib/农夫与少妇.json"
+        },
+    {
+      "key": "网盘集合",
+      "name": "网盘集合|4K",
+      "type": 3,
+      "api": "csp_网盘集合",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json",
+        "share": "./网盘集合.json"
+      }
+    }
+     ],
+  "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
+  "lives": [
+    {
+      "key": "push_agent",
+      "name": "推送",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./peizhi.json"
+      }
+    }
+  ]
+}
